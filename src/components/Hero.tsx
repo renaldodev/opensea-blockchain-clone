@@ -1,6 +1,6 @@
 const style = {
 	wrapper: `relative`,
-	container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+	container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s550')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
 	contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
 	copyContainer: `w-1/2`,
 	title: `relative text-white text-[46px] font-semibold`,
@@ -26,6 +26,33 @@ export function Hero() {
 						</div>
 						<div className={style.description}>
 							Opensea is the world&apos;s first and largest NTF marketplace
+						</div>
+						<div className={style.ctaContainer}>
+							<button className={style.accentedButton}>Explore</button>
+							<button className={style.button}>Create</button>
+						</div>
+					</div>
+					<div className={style.cardContainer}>
+						<img
+							className="rouded-t-lg"
+							src="https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=s550"
+						/>
+						<div className={style.infoContainer}>
+							<img
+								className="h-[2.25rem] rounded-full"
+								src="https://github.com/renaldodev.png"
+								alt=""
+							/>
+							<div className={style.author}>
+								<div className={style.name}>Renaldo</div>
+								<a
+									href="https://github.com/renaldodev"
+									className="text-[#2181e2]"
+									target="_blank"
+								>
+									@renaldodev
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
